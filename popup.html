@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 열리자마자 보이는 팝업</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">   
+    <style>
+        body.on{
+            overflow-y:hidden;
+        }
+        body.on:after{
+            content: ''; /* 필수 스타일 */
+            display:block;
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            background-color:#00000080;
+            z-index: 10; /* 반드시 잡아둘것*/
+        }
+        #notice{
+            background-color:#fff;
+            position:absolute;
+            max-width:600px;
+            max-height:600px;
+            border-radius:30px;
+            z-index:11;
+            left:2rem;
+            right:2rem;
+            top:2rem;
+            bottom:2rem;
+            margin: auto;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            display: none;
+
+        }
+
+        .on #notice{
+            display: flex;
+
+
+        }
+        #notice button {
+            position:absolute;
+            right:0;
+            top:0;
+            transform:translateY(-110%);
+            background-color:transparent;
+            width:2.5rem; height:2.5rem;
+            border:0;
+            font-size:0;
+            color:transparent;
+            cursor:pointer;
+        
+        }
+
+        #notice button:before {
+
+        content: '';
+        display: block;
+        height:3px;
+        background-color:#fff;
+        transform-origin: center;
+        transform: rotate(45deg);
+
+        }
+
+
+
+        #notice button:after {
+
+            content: '\00d7';
+            display: block;
+            height:3px;
+            background-color:#fff;
+            transform-origin: center;
+            transform: rotate(-45deg);
+        }
+
+        #notice li{
+
+            font-size: 2rem;
+            line-height:2;
+            border-bottom:1px solid #ccc;
+        } 
+
+        #notice ul {
+            padding:2rem;
+
+        }
+
+       
+
+    </style>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#notice button').click(function(){
+                $('body').removeClass('on')
+            })
+
+        })
+    </script>
+
+</head>
+
+<body class="on">
+    <div class="content">
+        
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+        <p>아무거나</p>
+    </div>
+    <!-- #notice>button{닫기}+div.popcontent>ul>li{팝업리스트}*5 -->
+    <div id="notice">
+        <button>닫기</button>
+        <div class="popcontent">
+            <ul>
+                <li>팝업리스트</li>
+                <li>팝업리스트</li>
+                <li>팝업리스트</li>
+                <li>팝업리스트</li>
+                <li>팝업리스트</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

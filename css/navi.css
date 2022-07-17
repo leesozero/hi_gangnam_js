@@ -1,0 +1,26 @@
+#navi{  position: fixed; 
+        left:0;
+        right: 0; 
+        top: 0; 
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+#navi ul{display: flex; justify-content: center;}
+#navi ul li{ padding: 15px;}
+
+#navi ul li{border-radius:30px; border:5px solid rgb(9, 153, 33); margin:0 15px; text-align:center;}
+
+/*
+
+#navi ul li:nth-of-type(1) {border-color:green;}
+#navi ul li:nth-of-type(2) {border-color:crimson;}
+#navi ul li:nth-of-type(3) {border-color:blue;}
+
+
+#navi ul li:nth-of-type(1) a{color:darkgreen; text-decoration: none;}
+#navi ul li:nth-of-type(2) a{color:crimson; text-decoration: none;}
+#navi ul li:nth-of-type(3) a{color: blue; text-decoration: none;} 
+*/

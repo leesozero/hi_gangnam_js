@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 사용이유</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+            // ready 선언하기
+        $(document).ready(function(){
+            // 첫번째 li 속 a 첫번째메뉴 글자 삽입하기 html
+            $('#navi li:nth-child(1) a').html('첫번재메뉴')
+            // 첫번째 메뉴 글자 클릭하면 네이버로 넘어간다. attr
+            $('#navi li:first-child a').attr('href','http://www.naver.com');
+            // 첫번째 메뉴 글자색이 초록색이고 언더라인을 없애라.
+            $('#navi li:first-child a').css({
+                'textDecoration' : 'none'
+            })
+            
+            $()
+
+
+
+
+
+
+        })
+    </script>
+    
+</head>
+<body>
+    <ul id="navi">
+        <li class="navi1"><a href="" data-color="green"></a></li>
+        <li class="navi2"><a href=""></a></li>
+        <li class="navi3"><a href=""></a></li>
+        <li class="navi4"><a href=""></a></li>
+        <li class="navi5"><a href=""></a></li>
+    </ul>
+    
+</body>
+</html>
